@@ -1,30 +1,12 @@
----
-title: "Untitled"
-author: "Camargo, Lucky"
-date: "2024-02-22"
-output: html_document
----
+What is civic technology, and how can Smart Cities benefit from it? [Write at least
+300 words and properly cite (using APA, MLA, or other citation style) the sources you
+use.] (15 points)
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
-## R Markdown
+According to McCann(qtd. in Wilson and Chakraborty), "civic technology refers to both tools and processes that use information and communication technologies to support urban problem solving and improve quality of life"" (30). By leveraging open data with a commitment toward building technology that places the knowledge and experience of people affected by urban issues first, civic technology, looks to democratize cities and thereby "enhance quality of life and further social equity" (Wilson, Chakraborty 30). In other words, civic tech centers people rather than technology (Wilson, Chakraborty 42). Wilson and Chakraborty define Smart Cities as the improvement of resource utilization through information and communication technologies(42). The concept of a Smart City assumes that access to open data and the collection of data combined with analysis will provide city residents the opportunities to build technologies that improve public service delivery. Comprising Smart Cities are a range of technologies that rely on the construction of a data collection infrastructure like the Array of Things in Chicago(AoT) or technology groups like ChiHackNight. For example, in Chicago, efforts by groups like Chi Hack Night have produced systems predicting Ecoli levels at city beaches that the Chicago Park District now uses to inform Chicago residents of lake safety. That being said, Wilson and Chakraborty, also take the view that civic technology legitimacy can only acheive impact if the data analysis and technology knowledge is applied to issues of importance to communities driven by the lived experience of people in communities (36).
+Smart cities and civic technology represent an advancement in civic engagement to a certain degree however, its promotion by technology companies like Google or Microsoft merits careful consideration. Additionally, considerable privacy concerns exist over the increased surveillance and the data collection required to create new systems. Lastly, the impact of civic technology has not yet been fully evaluated to know what benefits have been achieved. Therefore, while smart cities and civic technology have the potential to enhance urban living, significant work remains to address these issues comprehensively.  
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+## References
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+Wilson, Bev, and Arnab Chakraborty. “Planning Smart(Er) Cities: The Promise of Civic Technology.” Journal of Urban Technology, 3 July 2019, pp. 1–23, https://doi.org/10.1080/10630732.2019.1631097.
 
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
