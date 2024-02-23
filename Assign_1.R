@@ -13,3 +13,9 @@ delegation92=
   arrange(desc(total_athletes)) %>%
   select(country, total_athletes)
 delegation92
+
+#7a.pt2 Create a tibble that contains only the variables country and athletes. 
+
+delegation92=as_tibble(delegation92)
+
+View(delegation92)
