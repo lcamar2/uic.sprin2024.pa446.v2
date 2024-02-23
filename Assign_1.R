@@ -21,3 +21,4 @@ Olympics <- read_csv("Olympics.csv")
 Olympics=
   Olympics %>%
   mutate(total.medals = gold + silver + bronze)
+Olympics
