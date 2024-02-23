@@ -22,3 +22,10 @@ Olympics=
   Olympics %>%
   mutate(total.medals = gold + silver + bronze)
 Olympics
+
+#6b For each country, how many gold medals has it won?
+gold_by_country=
+  Olympics %>%
+  group_by(country) %>%
+  summarize(total_gold = sum(gold, na.rm = TRUE))
+gold_by_country
