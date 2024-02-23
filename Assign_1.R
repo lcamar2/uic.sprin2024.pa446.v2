@@ -3,6 +3,41 @@
 # pane and typing git branch. The response from 
 # command was "main"-denoting the branch.
 
+
+#Load Packages
+library(readr)
+library(tidyverse)
+library(ggplot2)
+
+
+#Load data
+Olympics <- read_csv("Olympics.csv")
+
+
+#6a Calculate new variable, called '‘total.medals’, which is the sum of gold, silver, and
+#bronze, and add it to the Olympic dataset.
+
+Olympics=
+  Olympics %>%
+  mutate(total.medals = gold + silver + bronze)
+Olympics
+
+#6b For each country, how many gold medals has it won?
+gold_by_country=
+  Olympics %>%
+  group_by(country) %>%
+  summarize(total_gold = sum(gold, na.rm = TRUE))
+gold_by_country
+
+
+#6c For each year, how many total medals were given out?
+medals_by_year=
+  Olympics %>%
+  group_by(year) %>%
+  summarize(total_medals=sum(total.medals,na.rm = TRUE))
+medals_by_year
+
+
 #7a. Which countries had the largest delegation of athletes in 1992? 
 
 delegation92=
@@ -43,3 +78,6 @@ plot=
        y="Number of Gold Medals")
 
 plot
+
+
+
