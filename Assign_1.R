@@ -19,3 +19,27 @@ delegation92
 delegation92=as_tibble(delegation92)
 
 View(delegation92)
+
+#7b. For the following five countries, plot the number of gold medals earned over time:
+#United States, France, Germany, Russia, and China
+
+#create the targeted data set for plot
+
+five_countries =
+  Olympics %>%
+  filter(country %in% c("United States", "France", "Germany", "Russia", "China")) %>%
+  group_by(country, year) %>%
+  summarize(gold_medals = sum(gold, na.rm = TRUE))
+
+
+plot=
+  five_countries%>%
+  ggplot(aes(x=year, y=gold_medals, color=country, group=country))+
+  geom_line()+
+  geom_point()+
+  theme_minimal()+
+  labs(title = "Gold Medals 1980-2014 by Country",
+       x="Year",
+       y="Number of Gold Medals")
+
+plot
